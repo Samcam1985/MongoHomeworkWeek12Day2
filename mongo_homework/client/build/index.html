@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Pokemon</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="bundle.js"></script>
+</head>
+<body>
+<h1>Pokemon Characters</h1>
+  <div class="container">
+    <div class="createCharacter">
+    <form action="/characters" method="POST">
+      <input type="text" placeholder="Name" name="name">
+      <input type="text" placeholder="Description" name="description">
+      <button type="submit">Submit</button>
+    </form>
+    </div>
+    <div class="deleteCharacters">
+      <form action="/delete" method="POST">
+        <button id="deleteButton" type="submit">Delete All Pokemon</button>
+      </form>
+    </div>
+  </div>
+  <!-- <div class="image_container">
+    <img id="vigo-pic" src="/images/vigo.jpg" />
+  </div> -->
+  <div class="list-container">
+    <ul id="characters">
+    </ul>
+  </div>
+</body>
+</html>
+
+<footer> 
+</footer>
